@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Prototipo de compatibilidad</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link  rel="stylesheet" href="{{ url_for('static', filename='css/styles.css' ) }}" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand js-scroll-trigger" href="index.html">Inicio</a>
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Selecciona tu opcion
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="clasbas.html">Clasificacion 1</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href=".html">Clasificacion 2</a></li>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href=" ">Clasificacion 3</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead">
+		<div class="aws">
+		<div class="mx-auto text-center">
+                    <span style="--l: 'Proto';">Proto</span>
+					<span style="--l: 'tipo';">tipo</span>
+					<span style="--l: '  de com';">  de com</span>
+					<span style="--l: 'patibi';">patibi</span>
+					<span style="--l: 'lidad';">lidad</span>
+                </div>
+		</div>
+		<audio controls>
+		<source src="{{ url_for('static', filename='assets/airpresent.mp3' ) }}" type="audio/mpeg">
+		</audio>
+        </header>
+        <!-- Contact-->
+        <section class="contact-section bg-black">
+            <div class="container">
+                <h1> Compatibilidad 1 </h1>
+
+				<form method="post" action="/comp1">
+					<input type="text" name="name" required/>
+					<input type="email" name="email" required/>
+					<input type="submit"/>
+
+				</form>
+
+                <div class="social d-flex justify-content-center">
+                    <a class="mx-2" href="#!"><i class="fab fa-twitter"></i></a>
+                    <a class="mx-2" href="#!"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </section>
+        <!-- Footer-->
+        <footer class="footer bg-black small text-center text-white-50"><div class="container">Copyright ©sitiodelteam8</div></footer>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Third party plugin JS-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+        <!-- Core theme JS-->
+        <script src=""{{ url_for('static', filename='js/scripts.js' ) }}""></script>
+    </body>
+</html>
