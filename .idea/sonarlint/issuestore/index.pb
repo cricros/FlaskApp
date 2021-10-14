@@ -13,7 +13,3 @@ K
 app.py,1/3/13cce7fd076299c81b4986166f3d822791c9490e
 <
 pruebasbd.py,e/1/e1cb6512b2270b57cd14ef006664a3d4faeb584d
-@
-requirements.txt,1/9/19359a61ae2446b51b549167b014da2fcf265768
-8
-Procfile,b/c/bc3c68e880d1a01632bce79f69dd1387c7ba9c54
