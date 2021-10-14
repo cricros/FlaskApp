@@ -1,10 +1,6 @@
 
 I
 templates/simpleform.html,5/8/5853cd071a549c3e115640ba68c02abb4cb52c49
-E
-static/css/styles.css,f/f/ff5f6247d17a4d94e3cf2aed570cdefe538f01e5
-D
-templates/index.html,f/6/f69b8ce2e31684ae06f1b3e84821e07e3dfddb2f
 B
 templates/asda.sql,6/4/645619b838e6ae6d4c946b282d3a349f533a25b0
 K
