@@ -14,10 +14,10 @@ app = Flask(__name__)
 
 
 #si no te permite conectar con localhost intenta con 127.0.0.1.
-app.config['MYSQL_HOST'] = '127.0.0.1'
-app.config['MYSQL_USER'] = 'root'
-app.config['MYSQL_PASSWORD'] = ''
-app.config['MYSQL_DB'] = 'componentes'
+app.config['MYSQL_HOST'] = 'proyectosusana.mysql.pythonanywhere-services.com'
+app.config['MYSQL_USER'] = 'proyectosusana'
+app.config['MYSQL_PASSWORD'] = '123456abc'
+app.config['MYSQL_DB'] = 'pruebas_bd'
 
 mysql = MySQL(app)
 
@@ -28,7 +28,7 @@ def index():
     return render_template("index.html") #cambiar el formato de index.hmtl
 
 
-'''
+
 @app.route('/comp1', methods=['GET','POST'])
 def comp1():
 
@@ -63,6 +63,5 @@ def select():
         return render_template('select_table.html',userDetails = userDetails)
 
 
-'''
 if __name__ == '__main__':
     app.run(host='0.0.0.0')
