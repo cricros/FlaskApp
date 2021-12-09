@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+      <meta name="description" content="" />
+      <meta name="author" content="" />
+      <title>Prototipo de compatibilidad</title>
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+
+      <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+      <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+      <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet" />
+
+      <link  rel="stylesheet" href="/static/css/style.css"/>
+</head>
+<body>
+    <header class="masthead">
+		        <div class="aws">
+		            <div class="mx-auto text-center">
+                     <span>Con la seleccion </span>
+					           <span> de los videojuegos.</span>
+					           <span>El juego con mayor carga es: </span>
+					           <span><u> "{{juego}}"</u> </span>
+					           <span> y la calidad seleccionada: <u>"{{res}}"</u></span>
+                </div>
+		        </div>
+    </header>
+    <table align="center">
+          {% for conf_pc in config_pc %}
+              <tr>
+                  <td><img src="/static/img/Procesador.png"/></td>
+                  <th>Procesador</th>
+                  <td>{{conf_pc.1}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/Grafica.png"/></td>
+                  <th>Grafica</th>
+                  <td>{{conf_pc.2}}</td>
+              </tr>
+
+              <tr>
+                  <td><img src="/static/img/PlacaM.png"/></td>
+                  <th>Placa madre</th>
+                  <td>{{conf_pc.3}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/Disco.png"/></td>
+                  <th>Disco</th>
+                  <td>{{conf_pc.4}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/Fuente.png"/></td>
+                  <th>Fuente</th>
+                  <td>{{conf_pc.5}}</td>
+              </tr>
+              <tr>
+                  <td><img src="/static/img/RAM.png"/></td>
+                  <th>RAM</th>
+                  <td>{{conf_pc.6}}</td>
+              </tr>
+          {% endfor %}
+      </table>
+    <button><a id="botoncito" href="http://proyectosusanaas.pythonanywhere.com">Nueva consulta</a></button>
+</body>
+</html>
